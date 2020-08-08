@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>B.FIGUEROA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<style>
+  h2 {
+  text-align: center;
+}
+
+
+  a {
+  text-decoration-line: none;
+  color: black;
+}
+
+a:hover
+{
+  font-size: 5vw;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  font-style: bold;
+  font-size: 3vw;
+  margin: 0;
+  padding: 0.75em 0.25em;
+  line-height: 1.1em;
+}
+
+ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 50vw;
+  grid-auto-flow: dense;
+}
+@media (min-width: 360px) {
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 33vw;
+  }
+}
+@media (min-width: 500px) {
+  ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 25vw;
+  }
+}
+@media (min-width: 700px) {
+  ul {
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 20vw;
+  }
+}
+@media (min-width: 900px) {
+  ul {
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 15vw;
+  }
+}
+@media (min-width: 1100px) {
+  ul {
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 11vw;
+  }
+}
+
+li {
+  height: 100%;
+  padding: 10px;
+  list-style-type: none;
+}
+li.biggest-box {
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+li.highlight-tall {
+  grid-row: span 5;
+  grid-column: span 3;
+}
+
+li.highlight-tall2 {
+  grid-row: span 10;
+  grid-column: span 4;
+}
+
+li.highlight-wide4 {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+
+img {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80VW;
+
+}
+
+.warning {
+  color: red;
+  font-size: 200%;
+}
+
+@supports (display: grid) {
+  .warning {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <header>
+    <h1><a href="">BERNADETTE FIGUEROA</a></h1>
+  </header>
+  <div class="warning">This demo only works in browsers that support CSS Grid Layout. If you can see this message, then your browser isn't supporting Grid. You can try out Grid in <a href="https://nightly.mozilla.org/">Firefox Nightly</a> or <a href="http://gridbyexample.com/browsers/">other browsers by flipping a flag</a>.</div>
+  <h2>MARKETING ASSETS FOR MOMA EXHIBTION <br> ADVANCED TYPOGRAPHY FINAL PROJECT <BR>  DESIGNED BY ME <BR> 2019</h2> <BR>
+
+
+        <img src="META.png"/> <BR>
+ 
+        <img src="bookcover.PNG"/> <BR> <BR> <BR> <BR> <BR> <BR> <BR>
+   
+        <img src="splashpg1.PNG"/> <BR> <BR> <BR> <BR>
+  
+        <img src="splashpg2.PNG"/> <BR> <BR> <BR> <BR>
+  
+        <img src="splashpg3.PNG"/> <BR> <BR> <BR> <BR>
+
+     
+    
+</main>
+<!-- partial -->
+  
+</body>
+</html>
