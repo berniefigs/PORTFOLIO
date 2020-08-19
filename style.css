@@ -23,11 +23,10 @@ ul {
   grid-auto-rows: 50vw;
   grid-auto-flow: dense;
 }
-@media (min-width: 360px) {
+@media (min-width: 300px) {
   ul {
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
-    grid-auto-rows: auto;
   }
 }
 @media (min-width: 500px) {
