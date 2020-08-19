@@ -25,7 +25,8 @@ ul {
 }
 @media (min-width: 360px) {
   ul {
-    grid-template-columns: auto;
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
     grid-auto-rows: auto;
   }
 }
