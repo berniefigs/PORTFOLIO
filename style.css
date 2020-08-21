@@ -30,10 +30,7 @@ ul {
     grid-auto-rows: 20vw;
     grid-auto-flow: dense;
   }
-  li {
-  grid-row: span 3;
-  grid-column: span 3;
-  }
+  
 }
 @media (min-width: 500px) {
   ul {
