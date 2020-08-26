@@ -2,14 +2,23 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: Arial;
-  font-size: 18px;
+@font-face {
+  font-family: myFirstFont2;
+  src: url(soehne-web-buch.woff);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(soehne-web-fett.woff);
+}
+
+body {
+  font-family: myFirstFont2;
 }
 
 h1 {
+  font-family: myFirstFont;
   text-align: center;
-  font-style: bold;
   font-size: 3vw;
   margin: 0;
   padding: 0.75em 0.25em;
