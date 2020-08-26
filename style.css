@@ -2,6 +2,24 @@
   box-sizing: border-box;
 }
 
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  position: sticky;
+  display: block;
+  float: left;
+  padding-left: 4%;
+}
+
+.active img {
+width: 20vw;
+}
+
 @font-face {
   font-family: myFirstFont;
   src: url(soehne-breit-web-fett.woff);
