@@ -7,7 +7,7 @@
   src: url(soehne-web-fett.woff);
 }
 
-h1 {
+html {
   font-family: myFirstFont;
   text-align: center;
   font-size: 3vw;
