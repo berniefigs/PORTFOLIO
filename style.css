@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+h1 {
+  position: -webkit-sticky;
+  position: stickty; top 0px;
+  align-items: center;
+  justify-content:center;
+  
+}
+
 .navbar {
   overflow: hidden;
   position: fixed;
