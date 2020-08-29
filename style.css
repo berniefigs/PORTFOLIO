@@ -2,13 +2,10 @@
   box-sizing: border-box;
 }
 
-h1 {
-  position: -webkit-sticky;
-  position: sticky; 
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   top: 0;
-  align-items: center;
-  justify-content:center;
-  
 }
 
 .navbar {
