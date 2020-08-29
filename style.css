@@ -4,7 +4,8 @@
 
 h1 {
   position: -webkit-sticky;
-  position: stickty; top 0px;
+  position: sticky; 
+  top: 0;
   align-items: center;
   justify-content:center;
   
