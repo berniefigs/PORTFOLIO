@@ -1,154 +1,112 @@
-* {
-  box-sizing: border-box;
-}
-
-div.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  padding: 5px;
-}
-
-.navbar {
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.navbar a {
-  position: sticky;
-  display: block;
-  float: left;
-  padding-left: 4%;
-}
-
-.active img {
-width: 20vw;
-}
-
 @font-face {
   font-family: myFirstFont;
-  src: url(soehne-breit-web-fett.woff);
+  src: url(soehne-web-buch.woff);
 }
 
-html {
+body {
+  font-family: myFirstFont; 
+  z-index: 1;
+}
+.nav-links {
+  text-align: left;
+  padding-left: 1%;
+  font-weight: normal;
+  font-size: 2.5vw;
+  border-style: none none solid none;
+  border-bottom-width: .5px;
+}
+
+h1 {
   font-family: myFirstFont;
-  text-align: center;
+   text-align: center;
+  font-weight: normal;
+}
+
+.modal,
+.tab__content {
+  display: none;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a {
+  color: black;
+  font-family: myFirstFont;
+  text-decoration-line: none;
+}
+
+.tabs a {
+  color: black;
+  font-family: myFirstFont;
+  text-decoration-line: none;
+  text-align: left;
+  padding-left: 1%;
+  font-weight: normal;
+  font-size: 2.5vw;
+}
+
+/* css grids */
+   h2 {
+   
+  font-weight: normal;
+  font-size: 2.5vw;
+  display: inline
+   }
+
+     h3 {
+   
+  font-weight: normal;
   font-size: 2vw;
-  margin: 0;
-  padding: 0.75em 0.25em;
-  line-height: 1.8em;
-}
-
-ul {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 50vw;
-  grid-auto-flow: dense;
-}
-@media (min-width: 300px) {
-  ul {
+  display: inline;
+   }
+    .cssgrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
-    grid-template-rows: auto;
-    grid-auto-flow: dense;
-  }
-  
-}
-@media (min-width: 500px) {
-  ul {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 25vw;
-  }
-}
-@media (min-width: 700px) {
-  ul {
     grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 20vw;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
+
+.div1 { 
+  grid-area: 1 / 1 / 4 / 3;
 }
-@media (min-width: 900px) {
-  ul {
-    grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: 15vw;
+
+.div2 { 
+  grid-area: 1 / 3 / 4 / 6; 
+  padding-right: 5%;
+}
+
+.div3 { 
+  grid-area: 1 / 4 / 4 / 6; 
+  padding-right: 20%;
+}
+
+.div4 { 
+  grid-area: 1 / 3 / 4 / 6; 
+  padding-right: 10%;
+}
+
+.div5 { 
+  grid-area: 1 / 4 / 4 / 6; 
+  padding-right: 10%;
+}
+
+.stressless {
+  width: 55vw;
+}
+
+.location, .pricesheet {
+  width: 35vw;
+}
+
+.businesscards {
+  width: 56vw;
   }
-}
-@media (min-width: 1100px) {
-  ul {
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: 11vw;
-  }
-}
-
-li {
-  height: 100%;
-  padding: 10px;
-  list-style-type: none;
-}
-
-li.biggest-box {
-  grid-row: span 3;
-  grid-column: span 3;
-}
-
-li.highlight-box {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
-li.highlight-tall {
-  grid-row: span 2;
-
-}
-
-li.highlight-tall2 {
-  grid-row: span 4;
-  grid-column: span 3;
-}
-
-li.highlight-tall3 {
-  grid-row: span 4;
-  grid-column: span 2;
-}
-
-li.highlight-wide {
-  grid-column: span 3;
-
-}
-
-li.highlight-wide2 {
-  grid-column: span 3;
-  grid-row: span 2;
-}
-
-
-li.highlight-wide3 {
-  grid-column: span 4;
-  grid-row: span 2;
-}
-li.highlight-wide4 {
-  grid-column: span 5;
-  grid-row: span 3;
-}
-
-
-img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.warning {
-  color: red;
-  font-size: 200%;
-}
-
-@supports (display: grid) {
-  .warning {
-    display: none;
-  }
-}
+.one-photo {width: 40vw;}
+.two-photo {width: 50vw; padding-left: 5%; padding-top: 6.6%;}
+.three-photo, .fifteen-photo {width: 30vw; padding-left: 5%;}
+.four-photo, .five-photo  {width: 36vw; padding-left: 5%;}
+.six-photo, .sixteen-photo {width: 36vw; padding-left: 5%;}
+.seven-photo, .fourteen-photo {width: 55vw; padding-left: 5%;}
+.eight-photo, .nine-photo, .ten-photo, .eleven-photo, .twelve-photo, .thirteen-photo
+{width: 55vw; padding-left: 5%;}
