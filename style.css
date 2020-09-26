@@ -113,6 +113,10 @@ a {
   flex-wrap: wrap; 
 }
 
+.peoplepleaser {
+  width: 50vw;
+}
+
 .one-photo {width: 40vw;}
 .two-photo {width: 50vw; padding-left: 5%; padding-top: 6.6%;}
 .three-photo, .fifteen-photo {width: 30vw; padding-left: 5%;}
