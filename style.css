@@ -7,6 +7,10 @@ body {
   font-family: myFirstFont; 
   z-index: 1;
 }
+
+.pointer, .pointer2 {width: 5w;}
+.name {width: 20vw;}
+
 .nav-links {
   text-align: left;
   padding-left: 1%;
