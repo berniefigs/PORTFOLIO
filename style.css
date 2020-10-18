@@ -8,7 +8,7 @@ body {
   z-index: 1;
 }
 
-.pointer, .pointer2 {width: 5w;}
+.pointer, .pointer2 {width: 5vw;}
 .name {width: 20vw;}
 
 .nav-links {
