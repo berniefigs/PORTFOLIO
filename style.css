@@ -8,9 +8,6 @@ body {
   z-index: 1;
 }
 
-.pointer, .pointer2 {
-  top-padding: 5%;
-  width: 5vw;}
 .name {width: 20vw;}
 
 .nav-links {
